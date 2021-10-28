@@ -33,14 +33,9 @@
 
 ## 🚀 Product Roadmap <a name = "roadmap"></a>
 
- * [x] Login / Signup Functionality
- * [x] Add Post
- * [x] Profile Page
- * [ ] Like Post
- * [ ] Social Sharing
- * [ ] User Feed
- * [ ] Views Count
- * [ ] Membership Badges
+ * [x] Landing Page
+ * [ ] Login / Signup
+ * [ ] Upload File
 
 
 ## ⛏️ Built With <a name = "tech_stack"></a>
