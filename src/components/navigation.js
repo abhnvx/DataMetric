@@ -1,8 +1,7 @@
 import React from 'react';
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export const Nav = () => {
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
   
     return (
       <div class="bg-gray-1000">

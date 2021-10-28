@@ -1,5 +1,4 @@
 import React from 'react';
-import { useEffect, useState } from "react";
 import feature1 from '../assets/images/f1.png';
 
 
