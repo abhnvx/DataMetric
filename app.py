@@ -61,6 +61,8 @@ def cluster(df, col):
     plt.ylabel(col[1])
     ax.set_zlabel(col[2])
     plt.show()
+    image_path = os.path('image'+'.png')
+    plt.savefig(image_path)
 
 def silhoutte(data):
     km_silhouette = []
