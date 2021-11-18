@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Link, Route, Switch} from 'react-router-dom';
 
 export const Header = () => {
     return (
@@ -41,13 +42,10 @@ export const Header = () => {
                 Understanding the hidden patterns beneath a trend is key to taking your ecommerce growth in the right direction. 
                 </p>
               </div>
-              <div>
-                <a
-                  href="/"
-                  className="inline-flex items-center justify-center h-12 px-6 font-semibold tracking-wide text-white transition duration-200 rounded shadow-md  bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
-                >
+              <div className="inline-flex items-center justify-center h-12 px-6 font-semibold tracking-wide text-white transition duration-200 rounded shadow-md  bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none">
+              <Link to="/signup">
                   Sign Up Today!
-                </a>
+                </Link>
               </div>
             </div>
           </div>
