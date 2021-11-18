@@ -1,25 +1,24 @@
 
 import './App.css';
-import Nav from './components/navigation.js';
-import { Header } from './components/Hero';
-import { BrandLogo } from './components/BrandLogo';
-import { Feature1 } from './components/feature1';
-import { Feature2 } from './components/feature2';
-import { CTA } from './components/cta';
-import { Footer } from './components/footerend';
+import indexRoutes from './routes';
+import {BrowserRouter, Switch, Redirect, Component, Route, rest } from 'react-router-dom';
+
 
 function App() {
   return (
-    <div className="App">
-      <Nav />
-      <Header />
-      <BrandLogo />
-      <Feature1 />
-      <Feature2 />
-      <CTA />
-      <Footer />
-    </div>
+  <BrowserRouter>
+  <Switch>
+
+            {indexRoutes.map((route, key) => {
+              return (
+                <Route {...route} />
+              );
+            })}
+          </Switch>
+    </BrowserRouter>
   );
 }
 
 export default App;
+
+
