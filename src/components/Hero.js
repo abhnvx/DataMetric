@@ -43,9 +43,10 @@ export const Header = () => {
                 </p>
               </div>
               <div className="inline-flex items-center justify-center h-12 px-6 font-semibold tracking-wide text-white transition duration-200 rounded shadow-md  bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none">
-              <Link to="/signup">
-                  Sign Up Today!
-                </Link>
+              <a href="http://127.0.0.1:5000">
+                  Get Started
+
+                </a>
               </div>
             </div>
           </div>

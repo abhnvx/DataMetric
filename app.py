@@ -3,7 +3,15 @@ from flask import Flask, redirect, url_for, session,render_template,request
 from authlib.integrations.flask_client import OAuth
 import os
 from datetime import timedelta
+#from forms import ProfileForm
 import pandas as pd
+#from forms import ProfileForm
+#from kmeans import K_cluster
+import io 
+import base64
+
+from werkzeug.utils import send_file
+from matplotlib.backends.backend_agg import FigureCanvasAgg as FigureCanvas
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.metrics import silhouette_score
@@ -60,9 +68,19 @@ def cluster(df, col):
     plt.xlabel(col[0])
     plt.ylabel(col[1])
     ax.set_zlabel(col[2])
-    plt.show()
-    image_path = os.path('image'+'.png')
-    plt.savefig(image_path)
+    canvas = FigureCanvas(fig)
+    img = io.BytesIO()
+    plt.savefig('static/img.png')
+    return 'static/img.png'
+    
+    '''
+    plt.savefig(img)
+    img.seek(0)
+    return send_file(img, mimetype='img/png')
+    
+    '''
+    
+    
 
 def silhoutte(data):
     km_silhouette = []
@@ -75,6 +93,7 @@ def silhoutte(data):
     cluster_n = int(km_silhouette.index(max(km_silhouette)))+1
     return cluster_n
 
+
 @app.route('/')
 def index():
     return render_template('login.html')
@@ -86,9 +105,19 @@ def home():
     email = dict(session)['profile']['email']
     if request.method == 'POST':
         file = pd.read_csv(request.files['file'])
-        col =['CustomerID','Age','Income']
-        cluster(file,col)
+        col =['Age','Income','Score']
+        image = cluster(file,col)
+        return render_template('image.html', image = image)
     return render_template('index.html')
+
+
+'''
+@app.route('/profile')
+@login_required
+def profile():
+    form = ProfileForm()
+    return render_template('profile.html',title = 'Register',form=form)
+'''
 
 @app.route('/login')
 def login():
@@ -99,17 +128,14 @@ def login():
 
 @app.route('/authorize')
 def authorize():
-    google = oauth.create_client('google')  # create the google oauth client
-    token = google.authorize_access_token()  # Access token from google (needed to get user info)
-    resp = google.get('userinfo')  # userinfo contains stuff u specificed in the scrope
+    google = oauth.create_client('google')
+    token = google.authorize_access_token()
+    resp = google.get('userinfo')  
     user_info = resp.json()
-    user = oauth.google.userinfo()  # uses openid endpoint to fetch user info
-    # Here you use the profile/user data that you got and query your database find/register the user
-    # and set ur own data in the session not the profile from google
+    user = oauth.google.userinfo()  
     session['profile'] = user_info
-    session.permanent = True  # make the session permanant so it keeps existing after broweser gets closed
+    session.permanent = True 
     return redirect('/home')
-
 
 @app.route('/logout')
 def logout():
