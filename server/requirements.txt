@@ -10,3 +10,5 @@ git+https://github.com/maxcountryman/flask-uploads.git@f66d7dc
 WTForms==3.0.0
 python-dotenv==0.19.2
 requests==2.26.0
+decouple
+selenium
