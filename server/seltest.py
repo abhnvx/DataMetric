@@ -11,7 +11,6 @@ driver = webdriver.Chrome("D:\Downloads\chromedriver_win32\chromedriver.exe")
 driver.maximize_window()
 
 driver.get("http://localhost:3000/")
-# driver.get("http://127.0.0.1:5000")
 
 get_started = WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "#root > div > div:nth-child(2) > div > div > div > div.inline-flex")))
 get_started.click()
@@ -39,3 +38,4 @@ if Check:
     print("Login process successfully executed")
 else:
     print("Login process Failed")
+driver.close()
