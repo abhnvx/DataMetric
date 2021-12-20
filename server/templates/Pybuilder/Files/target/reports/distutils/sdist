@@ -1,0 +1,42 @@
+running clean
+'build\temp.win-amd64-3.10' does not exist -- can't clean it
+'build\lib' does not exist -- can't clean it
+'build\bdist.win-amd64' does not exist -- can't clean it
+'build\scripts-3.10' does not exist -- can't clean it
+running sdist
+running egg_info
+creating Files.egg-info
+writing Files.egg-info\PKG-INFO
+writing dependency_links to Files.egg-info\dependency_links.txt
+writing namespace_packages to Files.egg-info\namespace_packages.txt
+writing top-level names to Files.egg-info\top_level.txt
+writing manifest file 'Files.egg-info\SOURCES.txt'
+reading manifest file 'Files.egg-info\SOURCES.txt'
+writing manifest file 'Files.egg-info\SOURCES.txt'
+warning: sdist: standard file not found: should have one of README, README.rst, README.txt, README.md
+
+running check
+warning: Check: missing required meta-data: url
+
+warning: Check: missing meta-data: either (author and author_email) or (maintainer and maintainer_email) should be supplied
+
+creating Files-1.0.dev0
+creating Files-1.0.dev0\Files.egg-info
+copying files to Files-1.0.dev0...
+copying kmeans.py -> Files-1.0.dev0
+copying setup.py -> Files-1.0.dev0
+copying Files.egg-info\PKG-INFO -> Files-1.0.dev0\Files.egg-info
+copying Files.egg-info\SOURCES.txt -> Files-1.0.dev0\Files.egg-info
+copying Files.egg-info\dependency_links.txt -> Files-1.0.dev0\Files.egg-info
+copying Files.egg-info\namespace_packages.txt -> Files-1.0.dev0\Files.egg-info
+copying Files.egg-info\top_level.txt -> Files-1.0.dev0\Files.egg-info
+copying Files.egg-info\zip-safe -> Files-1.0.dev0\Files.egg-info
+not copying Files.egg-info\SOURCES.txt (output up-to-date)
+Reading configuration from Files-1.0.dev0\setup.cfg
+Adding new section [egg_info] to Files-1.0.dev0\setup.cfg
+Setting egg_info.tag_build to '' in Files-1.0.dev0\setup.cfg
+Setting egg_info.tag_date to 0 in Files-1.0.dev0\setup.cfg
+Writing Files-1.0.dev0\setup.cfg
+creating dist
+Creating tar archive
+removing 'Files-1.0.dev0' (and everything under it)

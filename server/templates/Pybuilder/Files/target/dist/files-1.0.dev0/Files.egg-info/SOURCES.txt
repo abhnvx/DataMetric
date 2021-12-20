@@ -1,0 +1,8 @@
+kmeans.py
+setup.py
+Files.egg-info/PKG-INFO
+Files.egg-info/SOURCES.txt
+Files.egg-info/dependency_links.txt
+Files.egg-info/namespace_packages.txt
+Files.egg-info/top_level.txt
+Files.egg-info/zip-safe
