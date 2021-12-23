@@ -21,14 +21,10 @@
 ## 📝 Table of Contents
 - [Problem Statement](#problem_statement)
 - [Idea / Solution](#idea)
-- [Dependencies / Limitations](#limitations)
-- [Future Scope](#future_scope)
-- [Setting up a realistic local environment](#getting_started)
-- [Usage](#usage)
+- [Our Mission](#mission)
+- [Product Roadmap](#roadmap)
 - [Technology Stack](#tech_stack)
-- [Contributing](../CONTRIBUTING.md)
 - [Authors](#authors)
-- [Acknowledgments](#acknowledgments)
 
 ## 🧐 Problem Statement <a name = "problem_statement"></a>
 It is estimated that there will be  2.14 Billion Global digital buyers in 2021. That's a lot of potential customers. 
