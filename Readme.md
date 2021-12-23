@@ -1,6 +1,6 @@
 <p align="center">
   <a href="" rel="noopener">
- <img src="https://imgur.com/a/DdZ3OF3" alt="Project logo"></a>
+ <img src="https://i.imgur.com/QIShjP2.png" alt="Project logo"></a>
 </p>
 
 <h3 align="center">DataMetric</h3>
