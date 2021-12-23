@@ -31,24 +31,40 @@
 - [Acknowledgments](#acknowledgments)
 
 ## 🧐 Problem Statement <a name = "problem_statement"></a>
+It is estimated that there will be  2.14 Billion Global digital buyers in 2021. That's a lot of potential customers. 
 
 
 ## 💡 Idea / Solution <a name = "idea"></a>
+DataMetric is a customer segmentation SaaS tool. It helps you to segment your customers to bring comparative insights via your dashboard. It helps eCommerce businesses Organise Customer Data into meaningful data.
 
 ## 👀 Our Mission <a name = "mission"></a>
+Better Targeting.
+Improved Retention.
+Better Recommendations.
 
+More Customers, More Sales.
 
 ## 🚀 Product Roadmap <a name = "roadmap"></a>
 
  * [x] Landing Page
- * [ ] Login / Signup
- * [ ] Upload File
+ * [x] Login / Signup
+ * [x] Upload File
+ * [x] Clustering Graph
+ * [ ] Dashboard
+ * [ ] Multiple users
+ * [ ] Forecasting
+ * [ ] Business Intelligence
 
 
 ## ⛏️ Built With <a name = "tech_stack"></a>
 
-For Application
-- Flask for Backend
+- HTML. CSS, TailwindCSS, Bootstrap for Frontend
+- Flask as Backend
+- PostgreSQL for Database
+- Docker for Containerising and deploying our Application
+- Heroku for Image Deployment
+- Python for Data Modelling (Scikit-learn, Pandas, NumPY, Matplotlib, Seaborne)
+- D3.js, Highcharts & Cube.js for graphs visualization
 
 
                   
